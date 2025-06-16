@@ -22,4 +22,6 @@ urlpatterns = [
     path('usuarios/', include('usuarios.urls', namespace='usuarios')),
     path('generos/', include('generos.urls', namespace='generos')),
     path('filmes/', include('filmes.urls', namespace='filmes')),
+    path('cadeiras/', include('cadeiras.urls', namespace='cadeiras')),
 ]
+
