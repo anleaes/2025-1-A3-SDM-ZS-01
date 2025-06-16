@@ -3,3 +3,5 @@ sistemaingresso/__pycache__/*
 /apps/usuarios/migrations/*
 /apps/generos/__pycache__/*
 /apps/generos/migrations/*
+/apps/filmes/__pycache__/*
+/apps/filmes/migrations/*
