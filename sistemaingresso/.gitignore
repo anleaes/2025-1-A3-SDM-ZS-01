@@ -1,3 +1,5 @@
 sistemaingresso/__pycache__/*
 /apps/usuarios/__pycache__/*
 /apps/usuarios/migrations/*
+/apps/generos/__pycache__/*
+/apps/generos/migrations/*
