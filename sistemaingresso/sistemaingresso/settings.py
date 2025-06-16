@@ -47,6 +47,7 @@ INSTALLED_APPS = [
     'usuarios.apps.UsuariosConfig',
     'generos.apps.GenerosConfig',
     'filmes.apps.FilmesConfig',
+    'cadeiras.apps.CadeirasConfig',
 ]
 
 MIDDLEWARE = [
