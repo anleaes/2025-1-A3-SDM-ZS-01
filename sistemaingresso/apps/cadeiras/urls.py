@@ -6,7 +6,7 @@ from rest_framework import routers
 app_name = 'cadeiras'
 
 router = routers.DefaultRouter()
-router.register('', views.FilmeViewSet, basename='Cadeiras')
+router.register('', views.CadeiraViewSet, basename='Cadeiras')
 
 urlpatterns = [
     path('', include(router.urls) )
