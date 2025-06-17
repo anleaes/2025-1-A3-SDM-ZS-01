@@ -5,6 +5,6 @@ from django.shortcuts import render
 
 # Create your views here.
 
-class ItemcompraViewSet(viewsets.ModelViewSet):
+class ItemCompraViewSet(viewsets.ModelViewSet):
     queryset = Itemcompra.objects.all()
     serializer_class = ItemcompraSerializer  

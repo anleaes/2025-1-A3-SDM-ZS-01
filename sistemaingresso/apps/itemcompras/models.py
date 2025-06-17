@@ -1,6 +1,6 @@
 from django.db import models
 from compras.models import Compra
-from ingressos.models import ingresso
+from ingressos.models import Ingresso
 
 
 # Create your models here.
