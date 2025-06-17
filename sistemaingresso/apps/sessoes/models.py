@@ -1,11 +1,9 @@
 from django.db import models
-from .models import Filme
+from filmes.models import Filme
 # Create your models here.
 
 class Sessao(models.Model):
-    """
-    Representa uma exibição de um filme em um horário e sala específicos.
-    """
+    
     filme = models.ForeignKey(Filme, on_delete=models.CASCADE, related_name="sessoes") 
     sala = models.PositiveIntegerField('sala')
     horario = models.DateTimeField('horario', help_text="Data e hora de início da sessão.") 
