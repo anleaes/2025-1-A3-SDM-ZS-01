@@ -48,6 +48,7 @@ INSTALLED_APPS = [
     'generos.apps.GenerosConfig',
     'filmes.apps.FilmesConfig',
     'cadeiras.apps.CadeirasConfig',
+    'sessoes.apps.SessoesConfig',
 ]
 
 MIDDLEWARE = [
