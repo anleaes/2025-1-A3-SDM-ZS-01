@@ -5,3 +5,7 @@ from .serializer import SessaoSerializer
 from django.shortcuts import render
 
 # Create your views here.
+
+class SessaoViewSet(viewsets.ModelViewSet):
+    queryset = Sessao.objects.all()
+    serializer_class = SessaoSerializer  
