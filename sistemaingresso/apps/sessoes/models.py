@@ -9,9 +9,10 @@ class Sessao(models.Model):
     horario = models.DateTimeField('horario', help_text="Data e hora de início da sessão.") 
     is_active = models.BooleanField('ativo',default=True)  
 
-    def __str__(self):
-        return f"{self.filme.titulo} - Sala {self.sala} ({self.horario.strftime('%d/%m/%Y %H:%M')})"
 
-    class Meta:
-        verbose_name = "Sessao"
-        verbose_name_plural = "Sessoes"
+class Meta:
+    verbose_name = "Sessao"
+    verbose_name_plural = "Sessoes"
+
+def __str__(self):
+    return f"{self.filme.titulo} - Sala {self.sala} ({self.horario.strftime('%d/%m/%Y %H:%M')})"
