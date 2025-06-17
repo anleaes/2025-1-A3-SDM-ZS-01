@@ -8,10 +8,11 @@ class Usuario(models.Model):
     cpf = models.CharField(max_length=14, unique=True,)  
     telefone = models.CharField('Telefone celular', max_length=20)
 
-class Meta:
+    class Meta:
         verbose_name = 'Usuarios'
         verbose_name_plural = 'Usuarios'
         ordering =['id']
 
-def __str__(self):
-        return self.nome
+        def __str__(self):
+                return self.nome
+

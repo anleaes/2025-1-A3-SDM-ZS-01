@@ -22,11 +22,13 @@ class Compra(models.Model):
     status = models.CharField('satatus', max_length=20, choices=STATUS_CHOICES, default='PENDENTE')
     metodo_pagamento = models.CharField('metodo de pagamento',max_length=20, choices=PAGAMENTO_CHOICES, blank=True, null=True)
 
+    class Meta:
+        verbose_name = "Compra"
+        verbose_name_plural = "Compras"
+        ordering = ['-data']
     
-class Meta:
-    verbose_name = "Compra"
-    verbose_name_plural = "Compras"
-    ordering = ['-data']
+    def __str__(self):
+        return f"Compra {self.id} de {self.usuario.nome} - Status: {self.get_status_display()}"
+
+
     
-def __str__(self):
-    return f"Compra {self.id} de {self.usuario.nome} - Status: {self.get_status_display()}"

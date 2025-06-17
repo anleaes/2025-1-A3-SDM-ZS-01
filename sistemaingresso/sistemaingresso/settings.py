@@ -50,6 +50,7 @@ INSTALLED_APPS = [
     'cadeiras.apps.CadeirasConfig',
     'sessoes.apps.SessoesConfig',
     'compras.apps.ComprasConfig',
+    'itemcompras.apps.ItemcomprasConfig'
 ]
 
 MIDDLEWARE = [
