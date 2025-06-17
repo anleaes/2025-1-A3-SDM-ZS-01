@@ -4,3 +4,7 @@ from .serializer import CompraSerializer
 from django.shortcuts import render
 
 # Create your views here.
+
+class CompraViewSet(viewsets.ModelViewSet):
+    queryset = Compra.objects.all()
+    serializer_class = CompraSerializer  
