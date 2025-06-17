@@ -9,3 +9,5 @@ sistemaingresso/__pycache__/*
 /apps/cadeiras/migrations/*
 /apps/sessoes/__pycache__/*
 /apps/sessoes/migrations/*
+/apps/compras/__pycache__/*
+/apps/compras/migrations/*
