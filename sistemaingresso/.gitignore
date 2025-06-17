@@ -11,3 +11,5 @@ sistemaingresso/__pycache__/*
 /apps/sessoes/migrations/*
 /apps/compras/__pycache__/*
 /apps/compras/migrations/*
+/apps/itemcompras/__pycache__/*
+/apps/itemcompras/migrations/*
