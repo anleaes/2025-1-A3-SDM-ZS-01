@@ -12,7 +12,7 @@ class Itemcompra(models.Model):
     compra = models.ForeignKey(Compra, on_delete=models.CASCADE)
 
     class Meta:
-        unique_together = ('Compra', 'ingresso')
+        unique_together = ('compra', 'ingresso')
         verbose_name = 'Item de pedido'
         verbose_name_plural = 'Itens de pedido'
         ordering =['id']
