@@ -7,7 +7,7 @@ from generos.models import Genero
 class Filme(models.Model):
     titulo = models.CharField('titulo', max_length=255)  
     diretor = models.CharField('diretor', max_length=255)  
-    data_lancamento = models.DateField('descricao', blank=True, null=True)  
+    data_lancamento = models.DateField('data de lançamento', blank=True, null=True)  
     descricao = models.TextField()
     duracao = models.DurationField()
     generos = models.ManyToManyField(Genero, related_name="filmes")
