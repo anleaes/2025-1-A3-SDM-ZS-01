@@ -1,0 +1,118 @@
+@startuml SistemaDeIngressos 
+
+  
+
+class Usuario { 
+
+  - nome : Char
+  - email : Email
+  - cpf : Char
+  - telefone : Char
+  
+  +toString()
+
+} 
+
+class Filme { 
+
+  - titulo : Text
+  - diretor : Text
+  - data_lancamento : Date 
+  - descricao : Text
+  - duracao 
+  - genero : Genero
+  
+  +toString()
+
+} 
+
+class Genero {
+
+  - nome : Char
+  - descricao : Text
+  
+  +toString()
+  
+}
+  
+
+class Sessao { 
+  
+  - codigo : Decimal
+  - sala : Decimal
+  - horario : Hour
+  - isActive : Boolean
+  - filme : Filme
+  - cadeira : Cadeira
+  
+  
+  +toString()
+
+} 
+
+  
+
+class Cadeira { 
+
+  - fileira : Char
+  - numero : Decimal
+  
+  +toString()
+
+} 
+  
+
+class Ingresso { 
+
+  - codigo : Decimal 
+  - preco : Decimal
+  - sessao : Sessao
+  
+  +toString()
+
+} 
+
+  
+
+class Compra { 
+
+  - data 
+  - valor_total
+  - usuario : Usuario
+  
+  +toString()
+
+} 
+
+class ItemCompra {
+  
+  - preco_unitario
+  - ingresso : Ingresso
+  - compra : Compra
+  
+  + toString()
+}
+
+  
+
+' Relacionamentos 
+
+Usuario "1" --o "n" Compra 
+
+Filme "n" o-- "n" Genero : Muitos \npara Muitos
+
+Sessao "1" o-- "n" Cadeira 
+
+Sessao "1" --o "1" Filme
+
+Compra --o ItemCompra :Carrinho \nde compras 
+
+Ingresso --o ItemCompra :Carrinho \nde compras
+
+Ingresso "n" --o "1" Sessao
+
+
+  
+
+@enduml 
+
